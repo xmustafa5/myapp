@@ -1,0 +1,331 @@
+.about {
+    padding: 80px 15px;
+    background: #ffffff;
+    overflow: hidden; 
+display: flex; 
+width: 100%;
+  }
+  .about::before { 
+    content: '';
+    position: absolute;
+    top:  -200px;
+    left: -400px;
+    width:  1000px;
+    height: 1000px;
+    border-radius: 80%;
+    background: radial-gradient(ellipse at center, hsla(217, 100%,50%, 0.5), transparent 70%);
+  }
+   .about::after {
+    content: '';
+    position: absolute;
+    top:    100px;
+    right: -400px;
+    width:  800px;
+    height: 800px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, hsla(313, 47%, 22%, 0.3), transparent 70%);
+  }
+  .aboutleft .imgbox { position: relative; }
+.aboutleft img { position: absolute; }
+.aboutbg, .aboutimg {
+  width: auto;
+  max-width: 100%;
+  margin: auto;
+}
+
+.know{
+    width: 100%;
+    height: 100vh;
+}
+  .icon{
+    position: absolute;
+
+ }
+  .icon {
+    width: 100%;   height: 100vh;
+    
+     position: relative;
+        position: absolute;
+        z-index: 5;
+       
+      }
+       .icon1 {  animation: icon1 5s linear infinite; 
+        width: 600px;
+        height: 50px;
+        position: absolute;
+        top: 170px;
+        left: 20px;
+      }
+      
+      
+       .icon2{   animation: icon2 5s linear infinite;   position: absolute;  
+        top:100px;
+        left: 920px; }
+       .icon3 {  animation: icon3 4s linear infinite;    position: absolute;
+        top: 800px;
+        left: 1020px; }
+      .icon4 { animation:   drop 2.5s infinite; 
+        position: absolute;
+        top:   60px;
+        right: 20px;
+        filter: drop-shadow(0 8px 30px hsla(350, 100%, 68%, 0.5));
+      }
+      .icon1, .icon2, .icon3, .icon4 {
+        filter: drop-shadow(0 10px 20px hsla(0, 0%, 0%, 0.2));
+        z-index: 5;
+      } 
+  .aboutleft  { position: relative; }
+ 
+ .imgbox {
+    width: 50%;
+    max-width: 100%;
+    margin: auto;
+  }
+  .aboutbg{
+    position: absolute;
+    right: 200px;
+  }
+  .aboutleft .aboutimg {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .aboutleft .icon1 {
+    top: 130px;
+    right: 0;
+    z-index: 5;
+  }
+  .aboutleft .icon2 { display: none; }
+  .aboutright { padding-top: 50px; }
+  .aboutright .section-subtitle { margin-bottom: 10px; }
+  .aboutright .section-title { margin-bottom: 30px; }
+  .aboutright .section-text { margin-bottom: 20px; }
+  .aboutul { margin-bottom: 40px; }
+  .aboutright{
+    width: 100%;
+    
+  }
+  .aboutul li {
+    display:     flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .sectiontitle {
+    font-size: 35px;
+    font-weight: 800;
+    color: #0A0A33;
+    line-height: 1.3;
+  }
+  .sectionsubtitle {
+    color: #003D99;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; /**/
+    margin-bottom: 25px;
+    margin-left: 40px;
+
+  }
+  .sectiontext {
+   
+    padding-left: 80px;
+    width: 100%;
+    
+    max-width: 500px;
+    text-align: start;
+    margin: auto;
+    margin-bottom: 30px;
+
+  }
+  .aboutul ion-icon {
+    font-size: 30px;
+    color: #8b45d2;
+  }
+  
+  .about ul p {
+    color: #0A0A33;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  .aboutul li:not(:last-child) { margin-bottom: 30px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+@media (min-width: 375px) {
+
+    .sectionsubtitle { font-size: 15px }
+     .icon1 { width: 300px; height: 10px; }
+    .icon2 {
+      display: block;
+      top:  530px;
+      right: 50px;
+    }
+     .icon3 {
+      display: block;
+      top: 150px;
+      left:  100;
+    }
+    .icon4 {
+      width: 60px;
+      top:  150px;
+      right: 550px;
+    }
+    .aboutleft .icon1 { top: 150px; }
+  
+    .aboutleft .icon2 {
+      display: block;
+      
+      right: 0;
+    }
+  }
+  
+  @media (min-width: 575px) {
+  
+     .shape1 img { width: 100px; }
+     .shape3 img { width: 250px; }
+    .aboutleft .icon1 { top: 200px; }
+    .aboutleft .icon2 { top: 350px; }
+  .contact{
+    margin-top: 40px;
+  }
+    .contact h2 { font-size: 37px; }
+  }
+  @media (min-width: 767px) {
+  
+    .category .courseitemgroup,.coursegrid,.instructorgrid,.footergrid { grid-template-columns: 1fr 1fr; }
+    .contactcard { padding: 40px 60px; }
+  }
+  
+  
+  
+  
+  @media (min-width: 992px) {
+  
+    .navbar { padding: 20px 15px }
+    .navbar_nav {
+      background: transparent;
+      position: static;
+      box-shadow: none;
+      padding: 0;
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: all;
+      display:     flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .nav_item:not(:last-child) a { border-bottom: none; }
+    .nav-toggle-btn { display: none; }
+    .navbar .btn { display: block; } 
+   
+    .homeleft { margin-top: 54;    z-index: 11;   }
+    .imgbox {
+      display: flex;
+      justify-content: center;
+      
+      width: auto;
+      max-width: 100%;
+    }
+    .about::before {
+      top:  600px;
+      left: -450px;
+    }
+    .about::after { top:0    ; }
+   
+  
+    /* .home22 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* align-items: center; */ /*after
+    }
+    .home22::before {
+      top:  -100px;
+      left: -300px;
+    }
+    .home22::after { top:0    ; }
+    .homeleft { margin-top: 54; height: 90vh;   z-index: 11;   }
+    .homeright   { position: absolute; }
+    .imgbox{
+      position: relative;
+      top: 14%;
+      left: 14%;
+      z-index: 3;
+    } */
+   
+   
+  
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: end;
+      gap: 40px;
+    } 
+    .aboutleft { margin-left: -70px; }
+    .aboutleft img { max-width: unset; }
+    .aboutright { padding-top: 0; }
+    .course { position: relative; }
+    .course .sectionsubtitle,
+    .course .sectiontitle { max-width: 600px; }
+    .course-grid {
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 0;
+    } 
+    .course .btnprimary {
+      position: absolute;
+      top: 130px;
+      right: 80px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .featuresright { height: auto; }
+   
+     .testimonials {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+  }
+  @media (min-width: 1200px) {
+  
+  
+    .homeleft { padding-bottom: 80px }
+    .sectiontext { font-size: 18px; }
+  
+    .category .courseitemgroup { grid-template-columns: repeat(3, 1fr); }
+    .instructorgrid { grid-template-columns: repeat(4, 1fr); }
+    .contactcard h2 { font-size: 45px; }
+  
+  }
+  @media (min-width: 460px){
+    .contact{
+      margin-top: 30px;
+    }
+  }
+  @media (min-width: 300px){
+    .contact{
+      margin-top: 30px;
+    }
+  }
+  
+  
+  
